@@ -1,0 +1,793 @@
+/* CSS Reset (l) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add figure and figcaption to reset */
+figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles with girly background color (a) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #5a3d5c; /* Dark purple text */
+    background-color: #fff0f5; /* Lavender blush background */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Sticky Header with girly colors (m) */
+header {
+    background: linear-gradient(135deg, #d291bc 0%, #ff9cce 100%); /* Pink to light pink gradient */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0 0 15px 15px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation styles with girly colors (c, n, o) */
+nav {
+    background: linear-gradient(90deg, #ff9cce 0%, #d291bc 100%); /* Pink gradient */
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    position: sticky;
+    top: 180px;
+    z-index: 99;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    border-top: none; /* Remove top border (n) */
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 3px solid #ff5c8d; /* Bright pink accent on hover (o) */
+}
+
+/* Main element styles with girly colors (e, r) */
+main {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    font-size: 1.1rem; /* Increased font size (e) */
+    margin-bottom: 2rem;
+    background-image: linear-gradient(to bottom, rgba(255, 245, 245, 0.7), rgba(255, 240, 245, 0.7)), 
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="20" cy="20" r="5" fill="%23ffc6e5" opacity="0.5"/><circle cx="50" cy="50" r="7" fill="%23ff9cce" opacity="0.3"/><circle cx="80" cy="80" r="4" fill="%23d291bc" opacity="0.4"/></svg>');
+}
+
+/* Hero image */
+.hero {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 5px solid #ffc6e5;
+}
+
+/* Product section styles */
+.product {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border: 2px solid #ffc6e5;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(to bottom, #fff, #fffafb);
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 156, 206, 0.3);
+}
+
+.product h3 {
+    color: #d291bc;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.product dl {
+    margin-top: 1rem;
+}
+
+.product dt {
+    font-weight: bold;
+    color: #ff5c8d;
+    margin-top: 0.5rem;
+}
+
+.product dd {
+    margin-left: 1.5rem;
+    color: #5a3d5c;
+}
+
+/* Make images responsive (d) */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* For products page specifically - single column (t) */
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 3px solid #ffc6e5;
+}
+
+/* Footer styles with girly colors (f) */
+footer {
+    background: linear-gradient(135deg, #d291bc 0%, #ff9cce 100%);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff5c8d;
+}
+
+/* Contact page specific styles (h) */
+#contact {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: #fffafb;
+    border-radius: 15px;
+    border-left: 5px solid #ff9cce;
+}
+
+#contact h2 {
+    color: #d291bc;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#contact a {
+    color: #ff5c8d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #d291bc;
+    text-decoration: underline;
+}
+
+/* Hours class (q) */
+.hours {
+    list-style-type: none;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: #fffafb;
+    border-radius: 15px;
+    border-left: 5px solid #d291bc;
+}
+
+.hours li {
+    padding: 0.7rem 0;
+    border-bottom: 1px dotted #ffc6e5;
+    font-size: 1.1rem;
+}
+
+.hours li:last-child {
+    border-bottom: none;
+}
+
+/* Map class (k) */
+.map {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffc6e5;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Action class (i) */
+.action {
+    background: linear-gradient(135deg, #ff5c8d 0%, #ff9cce 100%);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 92, 141, 0.3);
+}
+
+.action:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255, 92, 141, 0.4);
+}
+
+/* External link class (j) */
+.external-link {
+    color: #ff5c8d;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px dotted #ff5c8d;
+}
+
+.external-link:hover {
+    color: #d291bc;
+    border-bottom: 2px solid #d291bc;
+}
+
+/* Tel link class (p) */
+.tel-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.tel-link:hover {
+    color: #ff5c8d;
+    transform: scale(1.05);
+}
+
+/* Round class (s) */
+.round {
+    border-radius: 50%;
+}
+
+/* Highlight style */
+.highlight {
+    color: #ff5c8d;
+    font-weight: bold;
+}
+
+/* New styles for mobile viewports */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Mobile navigation styles */
+@media screen and (max-width: 767px) {
+    /* 9.a. Edit nav style rule for mobile */
+    nav {
+        position: relative;
+        top: 0;
+        margin-bottom: 1rem;
+    }
+    
+    /* 9.b. Edit nav ul style rule for mobile */
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    /* 9.c. Edit nav li style rule for mobile */
+    nav li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    nav li:last-child {
+        border-bottom: none;
+    }
+    
+    nav li a {
+        padding: 15px;
+    }
+    
+    /* 9.d. Style rule for mobile class */
+    .mobile {
+        display: block;
+    }
+    
+    .tablet-desktop {
+        display: none;
+    }
+    
+    /* Remove sticky header for mobile */
+    header {
+        position: relative;
+    }
+    
+    /* Main element adjustments for mobile */
+    main {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+    
+    /* Product page mobile styles (9.dd) */
+    article {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        background-color: #fffafb;
+        border-radius: 10px;
+    }
+    
+    article h3 {
+        text-align: center;
+        color: #d291bc;
+        margin-bottom: 0.5rem;
+    }
+    
+    article img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Second article background color */
+    article:nth-child(2) {
+        background-color: #ffeef5;
+    }
+    
+    article ul {
+        margin-left: 1.5rem;
+    }
+    
+    /* Aside element styling */
+    aside {
+        background-color: #fff0f5;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 1.5rem 0;
+        border-left: 4px solid #ff9cce;
+    }
+    
+    /* Map adjustments for mobile */
+    .map {
+        height: 300px;
+    }
+    
+    .map iframe {
+        height: 100%;
+    }
+    
+    /* Featured products layout for mobile */
+    .featured-products {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .featured-products figure {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .featured-products figcaption {
+        font-style: italic;
+        color: #5a3d5c;
+        margin-top: 0.5rem;
+    }
+    
+    /* Promo banner */
+    .promo-banner {
+        background: linear-gradient(135deg, #ff5c8d 0%, #ff9cce 100%);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+    }
+    
+    /* Contact form */
+    #contact-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    #contact-form label {
+        font-weight: bold;
+        color: #5a3d5c;
+    }
+    
+    #contact-form input,
+    #contact-form textarea {
+        padding: 10px;
+        border: 1px solid #ffc6e5;
+        border-radius: 5px;
+        font-family: inherit;
+    }
+}
+
+/* Tablet media query - 9.f */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* 9.g. Show and hide content for tablet */
+    .mobile {
+        display: none;
+    }
+    
+    .tablet-desktop {
+        display: block;
+    }
+    
+    /* 9.h. Remove sticky position for header */
+    header {
+        position: relative;
+    }
+    
+    /* 9.i. List items in single horizontal line with borders */
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav li {
+        flex: 1;
+        text-align: center;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    /* 9.j. Style for main ul */
+    main ul {
+        margin-bottom: 1rem;
+        margin-left: 1.5rem;
+    }
+    
+    /* 9.k. Apply mobile class to telephone link */
+    h4.mobile {
+        display: none;
+    }
+    
+    /* 9.l. Default height and width for embedded map */
+    .map {
+        padding-top: 0;
+        height: 400px;
+    }
+    
+    .map iframe {
+        height: 100%;
+    }
+    
+    /* 9.y. Linear gradient for product grid */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        background: linear-gradient(135deg, #fffafb 0%, #ffeef5 100%);
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    
+    /* Featured products layout for tablet */
+    .featured-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .featured-products figure {
+        text-align: center;
+    }
+    
+    .featured-products figcaption {
+        font-style: italic;
+        color: #5a3d5c;
+        margin-top: 0.5rem;
+    }
+    
+    /* Grid layout for products page */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    aside {
+        grid-column: 1 / -1;
+        background-color: #fff0f5;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin: 1rem 0;
+        border-left: 4px solid #ff9cce;
+    }
+}
+
+/* Desktop media query - 9.m */
+@media screen and (min-width: 1024px) {
+    /* 9.w. Desktop viewport width */
+    body {
+        max-width: 1200px;
+    }
+    
+    /* 9.n. Style header for desktop */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+    
+    /* 9.o. Style navigation for desktop */
+    nav {
+        position: static;
+        background: none;
+        margin-bottom: 0;
+        width: auto;
+    }
+    
+    /* 9.p. Style unordered list in navigation */
+    nav ul {
+        display: flex;
+        gap: 0;
+    }
+    
+    /* 9.q. Style list item links in navigation */
+    nav li a {
+        padding: 15px 25px;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+    
+    /* 9.x. Hover effect for navigation links */
+    nav li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+    }
+    
+    /* 9.r. Style main element for desktop */
+    main {
+        padding: 2.5rem;
+        margin: 2rem auto;
+    }
+    
+    /* 9.s. Style heading elements within main */
+    main h2 {
+        color: #d291bc;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    main h3 {
+        color: #ff5c8d;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* 9.t. Multiple-Column Layout for Desktop */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .featured-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .featured-products figure {
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .featured-products figure:hover {
+        transform: translateY(-5px);
+    }
+    
+    .featured-products figcaption {
+        font-style: italic;
+        color: #5a3d5c;
+        margin-top: 0.5rem;
+    }
+    
+    /* Grid layout for products page */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    aside {
+        grid-column: 1 / -1;
+        background-color: #fff0f5;
+        padding: 2rem;
+        border-radius: 15px;
+        margin: 1rem 0;
+        border-left: 5px solid #ff9cce;
+    }
+    
+    /* 9.cc. Text shadow for h3 within mobile div */
+    .mobile h3 {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* 9.u. Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 1400px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 9.v. Media Query for Print */
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        max-width: 100%;
+    }
+    
+    nav, footer, .promo-banner, .action {
+        display: none;
+    }
+    
+    a::after {
+        content: " (" attr(href) ") ";
+    }
+    
+    main {
+        box-shadow: none;
+        background: white;
+    }
+}
+
+/* Additional styles for new elements */
+.promo-banner {
+    background: linear-gradient(135deg, #ff5c8d 0%, #ff9cce 100%);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.featured-products {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.featured-products figure {
+    text-align: center;
+    margin: 1rem;
+    flex: 1;
+    min-width: 250px;
+}
+
+.featured-products img {
+    border-radius: 10px;
+    border: 3px solid #ffc6e5;
+    margin-bottom: 0.5rem;
+}
+
+.featured-products figcaption {
+    font-style: italic;
+    color: #5a3d5c;
+}
+
+#contact-form {
+    background-color: #fffafb;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact-form label {
+    font-weight: bold;
+    color: #5a3d5c;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ffc6e5;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+#contact-form button {
+    align-self: flex-start;
+}
